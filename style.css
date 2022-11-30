@@ -1,0 +1,16 @@
+#MainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.VerticalDiv {
+    font-size: 32px;
+    display: flex;
+}
+
+.HorizontalDiv {
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+}
