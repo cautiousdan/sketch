@@ -39,8 +39,16 @@ function addClass() {
     }
 }
 
+// Remove "Active" class from all .horizontalDivs
+function resetGrid() {
+    let horizontalDivs = document.getElementsByClassName("HorizontalDiv");
+    for (let i = 0; i < horizontalDivs.length; i++) {
+        horizontalDivs[i].classList.remove("Active");
+    }
+}
 
-spawnGrid(4);
+
+spawnGrid(10);
 
 
 
