@@ -20,15 +20,40 @@ function spawnGrid(size) {
             console.log(`lastVerticalDiv is ${lastVerticalDiv}`);
 
             //Add a new div inside the vertical div
-            let newHTML = "<div class=HorizontalDiv>#</div>";
+            let newHTML = "<div class=HorizontalDiv></div>";
             lastVerticalDiv.insertAdjacentHTML("beforeend", newHTML);
             horizontalRuns++
         }
         verticalRuns++;
     }
+    addClass();
 }
 
+// Add class to .horizontalDiv when mouse hovers over it
+function addClass() {
+    let horizontalDivs = document.getElementsByClassName("HorizontalDiv");
+    for (let i = 0; i < horizontalDivs.length; i++) {
+        horizontalDivs[i].addEventListener("mouseover", function () {
+            horizontalDivs[i].classList.add("Active");
+        });
+    }
+}
+
+
 spawnGrid(4);
+
+
+
+//changeColor();
+
+//function to change color of all fonts in horizontal divs to purple
+function changeColor() {
+    let horizontalDivs = document.getElementsByClassName("HorizontalDiv");
+    for (let i = 0; i < horizontalDivs.length; i++) {
+        horizontalDivs[i].style.color = "purple";
+    }
+}
+
 
 /*
 let newDiv = document.createElement("div");
