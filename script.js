@@ -1,4 +1,6 @@
 
+spawnGrid(10);
+
 let i = 1;
 function spawnGrid(size) {
     let verticalRuns = 0;
@@ -47,8 +49,17 @@ function resetGrid() {
     }
 }
 
+// Get a new size from user and then reset
+function sizeSet() {
+    let inputSize = window.prompt("Please enter desired grid size");
+    if (inputSize > 100) {
+        window.alert("That grid is too big");
+        return;
+    }
+    spawnGrid(inputSize)
+}
 
-spawnGrid(10);
+
 
 
 
