@@ -59,12 +59,6 @@ function sizeSet() {
     spawnGrid(inputSize)
 }
 
-
-
-
-
-//changeColor();
-
 //function to change color of all fonts in horizontal divs to purple
 function changeColor() {
     let horizontalDivs = document.getElementsByClassName("HorizontalDiv");
@@ -73,12 +67,3 @@ function changeColor() {
     }
 }
 
-
-/*
-let newDiv = document.createElement("div");
-let newContent = document.createTextNode("!");
-newDiv.appendChild(newContent);
-
-let currentDiv = document.getElementById("MainDiv");
-currentDiv.appendChild(newDiv);
-*/
